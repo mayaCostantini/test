@@ -10,6 +10,7 @@ name = "pypi-org-simple"
 
 [packages]
 thamos = "*"
+PyYaml = "*
 
 [dev-packages]
 
