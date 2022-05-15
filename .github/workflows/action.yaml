@@ -1,6 +1,4 @@
 name: 'Thoth Adviser'
-description: 'Get security recommendations for packages in a Python project and score its dependency stack.'
-author: 'Thoth-Station'
 inputs:
   requirementsFormat:
     description: 'Requirements format for the project dependencies, one of (pip | pip-tools | pip-compile | pipenv)'
