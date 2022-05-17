@@ -13,15 +13,8 @@ jobs:
       - uses: actions/checkout@v3
       - name: Get Thoth security advisories
         id: thoth-advise
-        uses: thoth-station/thoth-github-action@6ee6117d6a074327f4f8ab35b00a8003b5ae067d
+        uses: thoth-station/thoth-github-action@9c4425b2adaccae093fe4125b4a48918d1998f81
         with:
           requirements-path: 'Pipfile'
           requirements-format: pipenv
-      - uses: jwalton/gh-find-current-pr@v1
-        id: finder
-      - uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          number: ${{ steps.finder.outputs.pr }}
-          message: |
-            Test ${{ github.sha }} ended successfully.
-            This message is from a push.
+
