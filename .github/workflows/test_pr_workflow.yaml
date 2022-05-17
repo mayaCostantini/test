@@ -17,3 +17,5 @@ jobs:
         with:
           requirements-path: 'Pipfile'
           requirements-format: pipenv
+      - run: |
+        echo $ {{ github.event.number }}
