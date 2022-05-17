@@ -1,0 +1,22 @@
+name: 'Test for Thoth GitHub Action'
+on:
+  push:
+    paths:
+      - 'requirements.txt'
+      - 'Pipfile'
+jobs:
+  validate-dependencies:
+    runs-on: ubuntu-latest
+    container: quay.io/thoth-station/s2i-thoth-ubi8-py38:latest
+    name: Get Thoth recommenations on your dependencies
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Get Thoth security advisories
+        id: thoth-advise
+        uses: thoth-station/thoth-github-action@v1
+        with:
+          requirements-path: 'Pipfile'
+          requirements-format: pipenv
