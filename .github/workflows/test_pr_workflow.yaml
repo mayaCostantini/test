@@ -18,4 +18,4 @@ jobs:
           requirements-path: 'Pipfile'
           requirements-format: pipenv
       - run: |
-        echo $ {{ github.event.number }}
+          echo ${{ github.event.number }}
