@@ -16,7 +16,7 @@ jobs:
           python-version: 3.8
       - name: Get Thoth security advisories
         id: thoth-advise
-        uses: thoth-station/thoth-github-action@1d16050
+        uses: thoth-station/thoth-github-action@1d16050698181ce3c33ef17d4be7ade62ed22b3a
         with:
           requirements-path: 'Pipfile'
           requirements-format: pipenv
