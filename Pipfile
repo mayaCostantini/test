@@ -9,7 +9,7 @@ verify_ssl = true
 name = "pypi-org-simple"
 
 [packages]
-jinja2 = "==2.1"
+thamos = "*"
 
 [dev-packages]
 
