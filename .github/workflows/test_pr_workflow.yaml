@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Get Thoth security advisories
         id: thoth-advise
-        uses: thoth-station/thoth-github-action@3361dcedc969f126d492b3ba5fdf67325a79bb59
+        uses: thoth-station/thoth-github-action@9b950eca4ffd04e54a92f8e0db2b3ec2d1cf5e76
         with:
           requirements-path: 'Pipfile'
           requirements-format: pipenv
