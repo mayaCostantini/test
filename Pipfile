@@ -10,7 +10,7 @@ name = "pypi-org-simple"
 
 [packages]
 thamos = "*"
-jinja2 = "==2.5"
+jinja2 = "==2.1"
 
 [dev-packages]
 
