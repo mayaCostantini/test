@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Get Thoth security advisories
         id: thoth-advise
-        uses: thoth-station/thoth-github-action@73e44692f407324b8f1a09d333c4dc1fd36b8221
+        uses: thoth-station/thoth-github-action@ce7a651be60543201d3a20789d028d6f149bc3fe
         with:
           requirements-path: 'setup.cfg'
           requirements-format: setup.cfg
