@@ -9,7 +9,21 @@ verify_ssl = true
 name = "pypi-org-simple"
 
 [packages]
-thamos = "*"
+GitPython = "*"
+PyYAML = "*"
+click = "*"
+lazy_object_proxy = "*"
+marshmallow = "*"
+marshmallow-enum = "*"
+munch = "*"
+ogr = "*"
+packaging = "*"
+python-gnupg = "*"
+requests = "*"
+setuptools = "*"
+tabulate = "*"
+koji = "*"
+cachetools = "*"
 
 [dev-packages]
 
