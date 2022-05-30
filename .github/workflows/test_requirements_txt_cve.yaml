@@ -1,0 +1,21 @@
+name: 'Test the Thoth GitHub Action for dependencies in pip/pip-tools/pip-compile format with CVE'
+on:
+  push:
+    paths:
+      - 'overlays/requirements-txt-cve/requirements.txt'
+jobs:
+  validate-dependencies:
+    runs-on: ubuntu-latest
+    container: quay.io/thoth-station/s2i-thoth-ubi8-py38:latest
+    name: Get Thoth recommendations on your dependencies
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Get Thoth security advise
+        id: thoth-advise
+        uses: thoth-station/thoth-github-action@v0
+        with:
+          requirements-path: 'overlays/requirements-txt-cve/requirements.txt'
+          requirements-format: pip
