@@ -1,8 +1,8 @@
-name: 'Test the Thoth GitHub Action for dependencies in Pipfile format'
+name: 'Test the Thoth GitHub Action for dependencies in Pipfile format without CVE'
 on:
   push:
     paths:
-      - 'Pipfile'
+      - 'overlays/pipfile-no-cve/Pipfile'
 jobs:
   validate-dependencies:
     runs-on: ubuntu-latest
@@ -17,5 +17,5 @@ jobs:
         id: thoth-advise
         uses: thoth-station/thoth-github-action@v0
         with:
-          requirements-path: 'Pipfile'
+          requirements-path: 'overlays/pipfile-no-cve/Pipfile'
           requirements-format: pipenv

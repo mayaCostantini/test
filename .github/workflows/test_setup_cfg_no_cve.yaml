@@ -1,8 +1,8 @@
-name: 'Test the Thoth GitHub Action for dependencies in pip/pip-tools/pip-compile format'
+name: 'Test the Thoth GitHub Action for dependencies in setup.cfg format without CVE'
 on:
   push:
     paths:
-      - 'requirements.txt'
+      - 'overlays/setup-cfg-no-cve/setup.cfg'
 jobs:
   validate-dependencies:
     runs-on: ubuntu-latest
@@ -17,5 +17,5 @@ jobs:
         id: thoth-advise
         uses: thoth-station/thoth-github-action@v0
         with:
-          requirements-path: 'requirements.txt'
-          requirements-format: pip
+          requirements-path: 'overlays/setup-cfg-no-cve/setup.cfg'
+          requirements-format: setup.cfg
