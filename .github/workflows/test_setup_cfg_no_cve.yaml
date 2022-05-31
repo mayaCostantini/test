@@ -16,3 +16,4 @@ jobs:
         with:
           requirements-path: 'overlays/setup-cfg-no-cve/setup.cfg'
           requirements-format: setup.cfg
+          overlay-directory: setup-cfg-no-cve

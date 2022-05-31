@@ -26,7 +26,6 @@ koji = "*"
 cachetools = "*"
 aiohttp = "==3.7.3"
 
-
 [dev-packages]
 
 [requires]

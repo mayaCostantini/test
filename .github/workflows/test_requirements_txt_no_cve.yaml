@@ -16,3 +16,4 @@ jobs:
         with:
           requirements-path: 'overlays/requirements-txt-no-cve/requirements.txt'
           requirements-format: pip
+          overlay-directory: requirements-txt-no-cve

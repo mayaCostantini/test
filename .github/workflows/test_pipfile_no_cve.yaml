@@ -16,3 +16,4 @@ jobs:
         with:
           requirements-path: 'overlays/pipfile-no-cve/Pipfile'
           requirements-format: pipenv
+          overlay-directory: pipfile-no-cve
