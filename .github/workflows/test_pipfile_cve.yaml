@@ -9,7 +9,7 @@ jobs:
     container: quay.io/thoth-station/s2i-thoth-ubi8-py38:latest
     name: Get Thoth recommendations on your dependencies
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v1
       - name: Get Thoth security advise
         id: thoth-advise
         uses: thoth-station/thoth-github-action@3afc850ccf2cc6e31a42443b393ac25cc31cfe3a
