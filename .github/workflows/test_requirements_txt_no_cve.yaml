@@ -1,4 +1,4 @@
-ame: 'Test the Thoth GitHub Action for dependencies in pip/pip-tools/pip-compile format without CVE'
+name: 'Test the Thoth GitHub Action for dependencies in pip/pip-tools/pip-compile format without CVE'
 on:
   push:
     paths:
@@ -16,3 +16,4 @@ jobs:
         with:
           requirements-path: 'overlays/requirements-txt-no-cve/requirements.txt'
           requirements-format: pip
+          overlay-directory: requirements-txt-no-cve

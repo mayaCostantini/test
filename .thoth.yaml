@@ -15,3 +15,27 @@ runtime_environments:
       name: rhel
       version: '8'
     python_version: '3.8'
+
+  - name: 'setup-cfg-cve'
+    operating_system:
+      name: rhel
+      version: '8'
+    python_version: '3.8'
+
+  - name: 'setup-cfg-no-cve'
+    operating_system:
+      name: rhel
+      version: '8'
+    python_version: '3.8'
+
+  - name: 'requirements-txt-cve'
+    operating_system:
+      name: rhel
+      version: '8'
+    python_version: '3.8'
+
+  - name: 'requirements-txt-no-cve'
+    operating_system:
+      name: rhel
+      version: '8'
+    python_version: '3.8'
