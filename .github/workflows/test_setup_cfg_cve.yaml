@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v1
       - name: Get Thoth security advise
         id: thoth-advise
-        uses: thoth-station/thoth-github-action@3afc850ccf2cc6e31a42443b393ac25cc31cfe3a
+        uses: thoth-station/thoth-github-action@d04fe9b74959385c014a4faa9e802f1e0e29f6fa
         with:
           requirements-path: 'overlays/setup-cfg-cve/setup.cfg'
           requirements-format: setup.cfg

@@ -36,3 +36,4 @@ python_version = "3.8"
 disable_index_adjustment = false
 
 [thoth.allow_prereleases]
+ 
