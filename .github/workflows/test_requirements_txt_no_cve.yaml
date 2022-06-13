@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Get Thoth security advise
         id: thoth-advise
-        uses: thoth-station/thoth-github-action@a90d7758999db753647ea322ddb0c382c733f0fd
+        uses: thoth-station/thoth-github-action@30cc40fe0c023167ce0b2f119aa070123b50373b
         with:
           requirements-path: 'overlays/requirements-txt-no-cve/requirements.txt'
           requirements-format: pip
