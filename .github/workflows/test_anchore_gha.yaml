@@ -1,0 +1,15 @@
+name: 'Test the anchore SBOM github action'
+on:
+  push:
+    paths:
+      - 'Pipfile'
+
+jobs:
+  test-anchore:
+    runs-on: ubuntu-latest
+    name: Test anchore action
+    steps:
+      - uses: anchore/sbom-action@v0
+        with:
+          path:
+            ./
